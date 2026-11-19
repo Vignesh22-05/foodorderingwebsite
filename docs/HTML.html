@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickBite | Food Ordering</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">QuickBite</div>
+    <nav>
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="burgers">Burgers</button>
+        <button class="filter-btn" data-category="pizza">Pizza</button>
+        <button class="filter-btn" data-category="drinks">Drinks</button>
+    </nav>
+    <button id="cart-toggle" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+</header>
+
+<section class="hero">
+    <h1>Fresh Food, Delivered Fast</h1>
+    <p>Choose your favorites from our daily kitchen specials.</p>
+</section>
+
+<main class="container">
+    <div id="menu-grid" class="menu-grid"></div>
+</main>
+
+<aside id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Your Order</h2>
+        <button id="close-cart">&times;</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+        <div class="total-row">
+            <span>Total:</span>
+            <span>$<span id="cart-total">0.00</span></span>
+        </div>
+        <button id="checkout-btn" class="checkout-btn">Place Order</button>
+    </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
